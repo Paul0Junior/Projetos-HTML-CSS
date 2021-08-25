@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+    <title>OMNI CRM</title>
+</head>
+
+<body>
+    <div class="campo">
+        <h1 id="titulo" class="color_title">Cadastro de tabulações</h1>
+        <h3 id="subtitulo">Complete a tabulação da sua ligação:</h3>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome1"><strong>Nome:</strong></label>
+                <input type="text" name="nome1" id="nome1" required>
+            </div>
+
+            <div class="campo">
+                <label for="tel1"><strong>Telefone:</strong></label>
+                <input type="text" name="tel1" id="tel1" required>
+            </div>
+
+            <div class="campo">
+                <label for="email1"><strong>E-mail:</strong></label>
+                <input type="email" name="email1" id="email1" required>
+            </div>
+
+            <div class="campo">
+                <label for="tipo"><strong>Para qual tipo de cliente foi o atendimento?</strong></label>
+                <select id="tipo">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Paciente</option>
+                    <option>Médico</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione os exames agendados:</strong></label><br><br>
+                <input type="checkbox" id="exame1" name="exame1" value="RM">
+                <label for="exame1">RM</label>
+                <input type="checkbox" id="exame2" name="exame2" value="TC">
+                <label for="exame2">TC</label>
+                <input type="checkbox" id="exame3" name="exame3" value="US">
+                <label for="exame3">US</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Observações: </strong></label><br>
+            <textarea row="10" style="width: 26em" id="observacao" name="observacao"></textarea>
+        </div>
+
+        <button type="submit" class="botao">Tabular</button>
+
+</body>
+
+</html>
